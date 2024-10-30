@@ -87,7 +87,7 @@ A multithreaded TCP Proxy Server capable of:
 ### Implementation Notes
 1. **Thread Pool**: A custom thread pool is implemented to manage connection handling.
 2. **Logger**: Logs are written to `server_log.txt` and also printed to the console.
-3. **Testing**: Can be tested with utilities like **Postman**, **Perf**, or a custom script.
+3. **Testing**: Can be tested with utilities like **Postman** or a custom script but make sure to allow Network permissions.
 4. **Bench Test**: The 1000 Connections bench test was conducted using the connections_1000.py script.
 
 ### Dependencies
