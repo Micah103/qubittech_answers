@@ -3,7 +3,7 @@
 
 # C++ Interview Preparation Project
 
-This project consists of five C++ libraries and applications created as a part of interview preparation. Each solution is implemented in C++ using **Microsoft Visual Studio Community 2022** as the primary IDE. The README provides setup instructions, dependencies, and implementation details for each question.
+This project consists of five C++ libraries and applications created as part of interview preparation. Each solution is implemented in C++ using **Microsoft Visual Studio Community 2022** as the primary IDE. The README provides setup instructions, dependencies, and implementation details for each question.
 
 ## Table of Contents
 1. [Environment Setup](#environment-setup)
@@ -20,12 +20,21 @@ This project consists of five C++ libraries and applications created as a part o
 **IDE**: Microsoft Visual Studio Community 2022 (recommended)  
 **Alternative IDE**: Visual Studio Code (with C++ and CMake extensions)
 
-To run the projects on Visual Studio:
+### Visual Studio Workloads
+For the best experience, ensure you have the following workloads installed in Visual Studio:
+1. **Desktop Development with C++**
+2. **Game Development with C++**
+3. **Data Storage and Processing**
+4. **Linux and Embedded Development with C++**
+
+These workloads include the necessary libraries, compilers, and tools for handling networking, JSON parsing, SQLite integration, and other project requirements.
+
+### Project Setup
 1. Clone the repository from GitHub.
 2. Open the `.sln` solution file in Visual Studio.
 3. Check that all dependencies are configured, and build each project individually.
 
-To run on Visual Studio Code, install the necessary **C++** extensions, **CMake**, and **SQLite** dependencies if needed.
+For Visual Studio Code, ensure that the **C++** extensions, **CMake**, and **SQLite** dependencies are installed and configured.
 
 ---
 
@@ -57,7 +66,7 @@ The SQL Builder Library enables easy creation and management of SQL queries thro
 - A lightweight **ORM (Object-Relational Mapping)** for seamless mapping between database rows and C++ objects.
 
 ### Implementation Notes
-1. **SQLite Integration**: For testing purposes, SQLite is included.
+1. **SQLite Integration**: For testing purposes, SQLite is included(In the `logdata` sqlite file).
 2. **File Structure**: The SQLite include directory is referenced relatively for portability.
 3. **Classes**: Core classes include `SQLBuilder`, `Query`, and the ORM implementation.
 
@@ -79,6 +88,7 @@ A multithreaded TCP Proxy Server capable of:
 1. **Thread Pool**: A custom thread pool is implemented to manage connection handling.
 2. **Logger**: Logs are written to `server_log.txt` and also printed to the console.
 3. **Testing**: Can be tested with utilities like **Postman**, **Perf**, or a custom script.
+4. **Bench Test**: The 1000 Connections bench test was conducted using the connections_1000.py script.
 
 ### Dependencies
 - **Windows Sockets (Winsock)**: Required for TCP socket programming on Windows.
@@ -113,8 +123,9 @@ This utility reads large log files, processes each line, and stores results in a
   
 ### Implementation Notes
 1. **Multithreading**: Optimizes performance for large file handling.
-2. **Database Storage**: SQLite integration for storing processed data.
+2. **Database Storage**: SQLite integration for storing processed data(In the `logdata` sqlite file).
 3. **File Handling**: Reads and processes lines sequentially but uses threads for database insertions.
+4. **Logger**: Logs are written to `logfile.txt`.
 
 ### Dependencies
 - **SQLite**: Used as the database for storing log data.
@@ -130,4 +141,3 @@ For all solutions, ensure that:
 **Documentation** and **comments** are provided within each source file for detailed understanding of individual modules and functions.
 
 ---
-
