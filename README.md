@@ -1,7 +1,7 @@
 
 ---
 
-# C++ Interview Preparation Project
+# C++ Interview Implementation
 
 This project consists of five C++ libraries and applications created as part of interview preparation. Each solution is implemented in C++ using **Microsoft Visual Studio Community 2022** as the primary IDE. The README provides setup instructions, dependencies, and implementation details for each question.
 
