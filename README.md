@@ -138,6 +138,6 @@ For all solutions, ensure that:
 1. **SQLite** is configured properly if required, especially for the SQL Builder Library and Log File Processor.
 2. **Thread Pool Library** is set up and compatible with your environment for projects requiring threading.
 
-**Documentation** and **comments** are provided within each source file for detailed understanding of individual modules and functions.
+**Comments** are provided within each source file for detailed understanding of individual modules and functions.
 
 ---
